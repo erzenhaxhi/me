@@ -14,8 +14,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <style>
-    
 
         html {
             /* 1rem = 10px */
@@ -38,6 +41,16 @@
         a {
             color: #5074f9;
             font-weight: 600;
+        }
+
+        .main-title {
+            color: #fff;
+        }
+
+        .paragraph {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.6rem;
+
         }
 
         .header {
@@ -81,7 +94,8 @@
         }
 
         .experience {
-            border-bottom: 3px solid #fff;
+            /* border-bottom: 3px solid #fff; */
+            border-bottom: 3px solid #4e4e4e;
         }
 
         .header-logo {
@@ -121,7 +135,7 @@
         }
 
         section {
-            padding: 2rem 0;
+            padding: 1.8rem 0;
         }
 
         @media only screen and (max-width: 425px) {
@@ -195,7 +209,7 @@
 <body>
 
     <div class="container header">
-        <div class="header-logo">
+        <div class="header-logo main-title">
             ERZEN HAXHI
         </div>
         <div class="link-container">
@@ -225,8 +239,8 @@
 
     <div class="container">
         <section>
-            <h2>PROFILE</h2>
-            <p>
+            <h2 class="main-title">PROFILE</h2>
+            <p class="paragraph">
                 Web developer with 3 years of experience in building different types of web applications, like CMS, E-Commerce, back office platforms with angular framework. 
                 <!-- Also in this platforms I have used UI libraries like NG-ZORRO, Angular Material.
                 My focus in these projects is to create reusabele components, forms and good modular structure,
@@ -235,8 +249,8 @@
         </section>
         
         <section>
-            <h2>SKILLS</h2>
-            <ul>
+            <h2 class="main-title">SKILLS</h2>
+            <ul class="paragraph">
                 <li>JavaScript/TypeScript</li>
                 <li>Angular, React.js</li>
                 <li>Node.js, Express.js, Nest.js</li>
@@ -246,10 +260,10 @@
         </section>
     
         <section>
-            <h2>WORK EXPERIENCE</h2>
+            <h2 class="main-title">WORK EXPERIENCE</h2>
             <div class="experience">
-                <h4>ASTech-Advanced Systems & Technologies</h4>
-                <h5>Web Developer | 2019 - Present</h4>
+                <h4 class="main-title">ASTech-Advanced Systems & Technologies</h4>
+                <h5 class="paragraph">Web Developer | 2019 - Present</h4>
                 <!-- <ul>
                     <li>Develop web applications based on Angular 2+</li>
                     <li>Integrate REST api’s and GraphQL</li>
@@ -257,18 +271,18 @@
             </div>
     
             <div class="experience">
-                <h4>Zemp.io</h4>
-                <h5>Web Developer | 2021 June - Present</h4>
+                <h4 class="main-title">Zemp.io</h4>
+                <h5 class="paragraph">Web Developer | 2021 June - Present</h4>
  
             </div>
      
         </section>
     
         <section>
-            <h2>PORTFOLIO</h2>
+            <h2 class="main-title">PORTFOLIO</h2>
             <div class="portfolio__item">
                 <h4><a href="maw.it" target="_blank">maw.it</a> (Angular)</h4>
-                <p>
+                <p class="paragraph">
                     Worked in redeveloping the management system of this company.
                     Integrated dynamic permission and privilege checks in entire application.
                     Created schema based dynamic forms and tables.
@@ -276,7 +290,7 @@
             </div>
             <div class="portfolio__item">
                 <h4><a href="biciclettezecchini.it" target="_blank">biciclettezecchini.it</a> (Angular)</h4>
-                <p>
+                <p class="paragraph">
                     Connected rest API, worked in business logics and implemented payment API. 
                     Created CMS platform for this applications.
                 </p>
@@ -284,7 +298,7 @@
         
             <div class="portfolio__item">
                 <h4><a href="formaw.it" target="_blank">formaw.it</a> (Angular)</h4>
-                <p>
+                <p class="paragraph">
                     Connected rest API, worked in business logics.
                     Created CMS platform for this applications.
                 </p>
@@ -292,7 +306,7 @@
         
             <div class="portfolio__item">
                 <h4><a href="albed.it" target="_blank">albed.it</a> (Angular)</h4>
-                <p>
+                <p class="paragraph">
                     Worked in redeveloping the management system of this company.
                     Integrated dynamic permission and privilege checks in entire application.
                     Created schema based dynamic forms and tables.
@@ -301,7 +315,7 @@
         
             <div class="portfolio__item">
                 <h4><a href="zemp.io" target="_blank">zemp.io</a> (Angular)</h4>
-                <p>
+                <p class="paragraph">
                     Redeveloped back office part of this startup.
                     Integrated GraphQL API.
                     Created diffrenet types of reprots.
