@@ -50,7 +50,6 @@
         .paragraph {
             font-family: 'Roboto Mono', monospace;
             font-size: 1.6rem;
-
         }
 
         .header {
@@ -78,10 +77,10 @@
         }
 
         .line {
-            background-color: #3c373827;
+            background-color: #F0E27B;
             width: 100%;
-            height: 0.7px;
-            margin: 15px 0px;
+            height: 2px;
+            /* margin-bottom: 10px; */
         }
 
         footer {
@@ -142,7 +141,6 @@
             .container {
                 padding: 5px 15px;
             }
-
             
             html {
                 font-size: 52.5%;
@@ -165,27 +163,12 @@
             }
         }
 
-
-        /* Small devices (portrait tablets and large phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
-        }
         
-        /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (max-width: 768px) {
             .header-logo {
                 letter-spacing: .5rem;
             }
         } 
-        
-        /* Large devices (laptops/desktops, 992px and down) */
-        @media only screen and (max-width: 992px) {
-       
-        } 
-        
-        /* Extra large devices (large laptops and desktops, 1200px and down) */
-        @media only screen and (max-width: 1200px) {
-
-        }
 
         .link-container {
             display: flex;
@@ -241,7 +224,8 @@
         <section>
             <h2 class="main-title">PROFILE</h2>
             <p class="paragraph">
-                Web developer with 3 years of experience in building different types of web applications, like CMS, E-Commerce, back office platforms with angular framework. 
+                Front-end developer with 3+ years of experience in building different types of web applications, 
+                like CMS, E-Commerce, Back office platforms with Angular framework. 
                 <!-- Also in this platforms I have used UI libraries like NG-ZORRO, Angular Material.
                 My focus in these projects is to create reusabele components, forms and good modular structure,
                 Also I am passionate to work with Node.js and React.js. -->
@@ -254,7 +238,7 @@
                 <li>JavaScript/TypeScript</li>
                 <li>Angular, React.js</li>
                 <li>Node.js, Express.js, Nest.js</li>
-                <li>SQL</li>
+                <!-- <li>SQL</li> -->
                 <li>REST API, Graph QL</li>
             </ul>
         </section>
@@ -263,17 +247,21 @@
             <h2 class="main-title">WORK EXPERIENCE</h2>
             <div class="experience">
                 <h4 class="main-title">ASTech-Advanced Systems & Technologies</h4>
-                <h5 class="paragraph">Web Developer | 2019 - Present</h4>
+                <h5 class="paragraph">Front-end Developer | 2019 - Present</h4>
                 <!-- <ul>
                     <li>Develop web applications based on Angular 2+</li>
                     <li>Integrate REST api’s and GraphQL</li>
                 </ul> -->
             </div>
-    
+
+            <div class="experience">
+                <h4 class="main-title">Freelance</h4>
+                <h5 class="paragraph">Full Stack Developer | 2020 - Present</h4>
+            </div>    
+
             <div class="experience">
                 <h4 class="main-title">Zemp.io</h4>
-                <h5 class="paragraph">Web Developer | 2021 June - Present</h4>
- 
+                <h5 class="paragraph">Front-end Developer | 2021 June - Present</h4>
             </div>
      
         </section>
@@ -281,45 +269,44 @@
         <section>
             <h2 class="main-title">PORTFOLIO</h2>
             <div class="portfolio__item">
-                <h4><a href="maw.it" target="_blank">maw.it</a> (Angular)</h4>
+                <h4><a href="https://www.maw.it" target="_blank">maw.it</a> (Angular)</h4>
                 <p class="paragraph">
-                    Worked in redeveloping the management system of this company.
-                    Integrated dynamic permission and privilege checks in entire application.
+                    Worked in re-developing the management system of this company. <br>
+                    Integrated dynamic permission and privilege system in entire application. <br>
                     Created schema based dynamic forms and tables.
                 </p>
             </div>
             <div class="portfolio__item">
-                <h4><a href="biciclettezecchini.it" target="_blank">biciclettezecchini.it</a> (Angular)</h4>
+                <h4><a href="https://www.biciclettezecchini.it" target="_blank">biciclettezecchini.it</a> (Angular)</h4>
                 <p class="paragraph">
-                    Connected rest API, worked in business logics and implemented payment API. 
-                    Created CMS platform for this applications.
+                    Connected REST API, worked in business logics and implemented payment API.<br>
+                    And also I have created CMS platform for this application.
                 </p>
             </div>
         
             <div class="portfolio__item">
-                <h4><a href="formaw.it" target="_blank">formaw.it</a> (Angular)</h4>
+                <h4><a href="https://www.formaw.it" target="_blank">formaw.it</a> (Angular)</h4>
                 <p class="paragraph">
-                    Connected rest API, worked in business logics.
-                    Created CMS platform for this applications.
+                    Connected REST API, worked in business logics.<br>
+                    And also I have created CMS platform for this application.
                 </p>
             </div>
         
             <div class="portfolio__item">
-                <h4><a href="albed.it" target="_blank">albed.it</a> (Angular)</h4>
+                <h4><a href="https://www.albed.it" target="_blank">albed.it</a> (Angular)</h4>
                 <p class="paragraph">
-                    Worked in redeveloping the management system of this company.
-                    Integrated dynamic permission and privilege checks in entire application.
-                    Created schema based dynamic forms and tables.
+                    Connected REST API, worked in business logics.<br>
+                    And also I have created CMS platform for this application.
                 </p>
             </div>
         
             <div class="portfolio__item">
-                <h4><a href="zemp.io" target="_blank">zemp.io</a> (Angular)</h4>
+                <h4><a href="https://www.zemp.io" target="_blank">zemp.io</a> (Angular)</h4>
                 <p class="paragraph">
-                    Redeveloped back office part of this startup.
-                    Integrated GraphQL API.
-                    Created diffrenet types of reprots.
-                    Created stock management logic.
+                    Re-developed back office part of this startup.<br>
+                    Integrated GraphQL API.<br>
+                    Created differenet types of reports.<br>
+                    Created stock management logics.<br>
                     Created excel based import logics.
                 </p>
             </div>
@@ -327,11 +314,10 @@
     </div>
 
 
-
-    <!-- <div class="line"></div>
+    <div class="line"></div>
     
     <footer>
-        <div class="icons">
+        <!-- <div class="icons">
             <a href="https://www.linkedin.com/in/erzen-haxhi-708460a7/" target="_blank" class="icon">
                 <img src="./assets/linkedin.svg" alt="">
             </a>
@@ -341,8 +327,13 @@
             <a href=mailto:erzenhaxhix@gmail.com" class="icon">
                 <img src="./assets/at.svg" alt="">
             </a>
+        </div> -->
+        <div class="link-container" style="margin: 10px 0px;">
+            <a href="https://www.linkedin.com/in/erzen-haxhi-708460a7/" target="_blank" class="link">linkedIn</a>
+            <a href="https://github.com/erzenhaxhi" target="_blank" class="link">github</a>
+            <a href="mailto:erzenhaxhix@gmail.com"  class="link">mail</a>
         </div>
-    </footer> -->
+    </footer>
 
 
 </body>
