@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TR1V2FFJD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -26,7 +26,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-2TR1V2FFJD');
-    </script>
+    </script> -->
     <style>
 
         html {
@@ -346,4 +346,27 @@
 
 
 </body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDAP8gtYGSboDbftW0Qx4GjWNpwJWSv4Jk",
+      authDomain: "portfolio-6427f.firebaseapp.com",
+      projectId: "portfolio-6427f",
+      storageBucket: "portfolio-6427f.appspot.com",
+      messagingSenderId: "378385821366",
+      appId: "1:378385821366:web:a7abb5379e9ca64baec017",
+      measurementId: "G-7NM031BHD8"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>
